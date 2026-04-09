@@ -125,9 +125,8 @@ export default defineConfig({
     logo: '⚡',
 
     nav: [
-      { text: 'English', link: '/en/01-getting-started' },
-      { text: 'Indonesia', link: '/id/01-memulai' },
-      { text: 'GitHub', link: 'https://github.com/sandikodev/kiro-guide' },
+      { text: 'Guide', link: '/en/01-getting-started' },
+      { text: 'FAQ', link: '/en/faq' },
     ],
 
     sidebar: {
