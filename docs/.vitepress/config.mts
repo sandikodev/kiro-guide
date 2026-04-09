@@ -112,71 +112,55 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       description: 'Community guide to Kiro IDE, Chat, and CLI — built from real-world usage.',
-      themeConfig: {
-        nav: [
-          { text: 'Guide', link: '/en/01-getting-started' },
-          { text: 'FAQ', link: '/en/faq' },
-          { text: 'GitHub', link: 'https://github.com/sandikodev/kiro-guide' },
-        ],
-        sidebar: { '/en/': enSidebar },
-        docFooter: { prev: 'Previous', next: 'Next' },
-      }
     },
     id: {
       label: 'Bahasa Indonesia',
       lang: 'id',
       link: '/id/',
       description: 'Panduan komunitas Kiro IDE, Chat, dan CLI — dari penggunaan nyata.',
-      themeConfig: {
-        nav: [
-          { text: 'Panduan', link: '/id/01-memulai' },
-          { text: 'FAQ', link: '/id/faq' },
-          { text: 'GitHub', link: 'https://github.com/sandikodev/kiro-guide' },
-        ],
-        sidebar: { '/id/': idSidebar },
-        docFooter: { prev: 'Sebelumnya', next: 'Selanjutnya' },
-        darkModeSwitchLabel: 'Tampilan',
-        sidebarMenuLabel: 'Menu',
-        returnToTopLabel: 'Kembali ke atas',
-        outlineTitle: 'Di halaman ini',
-        lastUpdatedText: 'Terakhir diperbarui',
-      }
     }
   },
 
   themeConfig: {
     logo: '⚡',
+
+    nav: [
+      { text: 'English', link: '/en/01-getting-started' },
+      { text: 'Indonesia', link: '/id/01-memulai' },
+      { text: 'GitHub', link: 'https://github.com/sandikodev/kiro-guide' },
+    ],
+
+    sidebar: {
+      '/en/': enSidebar,
+      '/id/': idSidebar,
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sandikodev/kiro-guide' }
     ],
+
     editLink: {
       pattern: 'https://github.com/sandikodev/kiro-guide/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
+
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2026 sandikodev and contributors'
     },
+
     search: {
-      provider: 'local',
-      options: {
-        locales: {
-          id: {
-            translations: {
-              button: { buttonText: 'Cari', buttonAriaLabel: 'Cari' },
-              modal: {
-                noResultsText: 'Tidak ada hasil untuk',
-                resetButtonTitle: 'Reset pencarian',
-                footer: { selectText: 'pilih', navigateText: 'navigasi' }
-              }
-            }
-          }
-        }
-      }
+      provider: 'local'
     },
+
     lastUpdated: {
       text: 'Last updated',
       formatOptions: { dateStyle: 'short' }
+    },
+
+    docFooter: {
+      prev: 'Previous',
+      next: 'Next'
     }
   }
 })
