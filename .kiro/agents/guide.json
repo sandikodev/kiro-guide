@@ -1,0 +1,6 @@
+{
+  "name": "kiro-guide",
+  "description": "Documentation assistant for kiro-guide repo",
+  "prompt": "You are working on kiro-guide — a community documentation repo for Kiro IDE, Chat, and CLI.\n\nStructure: docs/en/ (English) and docs/id/ (Bahasa Indonesia), with more languages welcome.\n\nRules:\n- Write from real experience, not theory\n- Always provide code examples\n- Keep pages focused — one topic per file\n- When adding a page, update the README.md TOC in that language folder\n- Conventional commits: docs:, fix:, i18n:, feat:\n- Never machine-translate — adapt content for local context",
+  "tools": ["read", "write", "shell", "grep", "glob"]
+}
