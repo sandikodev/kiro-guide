@@ -1,10 +1,3 @@
----
-title: Steering Files
-layout: default
-parent: English
-nav_order: 2
----
-
 # Steering Files
 
 Steering files are Markdown files in `.kiro/steering/` that automatically inject context into every Kiro session.
@@ -50,6 +43,22 @@ inclusion: manual
 | `tdd.md` | Development workflow, testing conventions |
 | `conventions.md` | Code style, naming, commit format |
 | `deploy.md` | Deployment steps (mark as manual if complex) |
+
+## Example: context.md
+
+```markdown
+# Project Context
+
+## Stack
+- API: Hono + Cloudflare Workers
+- Web: SvelteKit + GitHub Pages
+- Shared: Zod schemas in packages/shared/
+
+## Commands
+pnpm dev      # api :8787 + web :5173
+pnpm test     # run all tests
+pnpm deploy   # deploy api + web
+```
 
 ## Tips
 

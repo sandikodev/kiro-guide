@@ -1,9 +1,3 @@
----
-title: Steering Files
-layout: default
-parent: Bahasa Indonesia
-nav_order: 2
----
 
 # Steering Files
 
@@ -27,18 +21,11 @@ Tanpa steering files, Kiro memulai setiap sesi tanpa pengetahuan apapun tentang 
 
 **File-match** — hanya saat file yang cocok ada di konteks:
 ```yaml
----
-inclusion: fileMatch
-fileMatchPattern: '*.svelte'
----
 # Konvensi Svelte...
 ```
 
 **Manual** — hanya saat direferensikan eksplisit dengan `#`:
 ```yaml
----
-inclusion: manual
----
 # Panduan deployment lanjutan...
 ```
 
