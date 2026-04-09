@@ -1,0 +1,14 @@
+{
+  "name": "kiro-guide",
+  "version": "1.0.0",
+  "description": "Community guide to Kiro IDE, Chat, and CLI",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "packageManager": "pnpm@10.29.3"
+}
