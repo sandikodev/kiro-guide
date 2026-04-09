@@ -1,3 +1,10 @@
+---
+title: Mode Chat
+layout: default
+parent: Bahasa Indonesia
+nav_order: 1
+---
+
 # Kiro Chat — Vibe Chat vs Spec Chat
 
 Kiro punya dua mode chat. Tahu kapan menggunakan masing-masing adalah kunci efisiensi.

@@ -1,3 +1,10 @@
+---
+title: Chat Modes
+layout: default
+parent: English
+nav_order: 1
+---
+
 # Kiro Chat — Vibe Chat vs Spec Chat
 
 Kiro has two chat modes. Knowing when to use each one is key to working efficiently.

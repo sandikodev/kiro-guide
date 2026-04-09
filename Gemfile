@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+gem "just-the-docs", "~> 0.10"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
